@@ -1,0 +1,26 @@
+pip install virtualenv
+virtualenv djangoenv
+source djangoenv/bin/activate
+python3 -m pip install -U -r requirements.txt
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver
+
+
+
+python3 manage.py createsuperuser // /admin for login - 
+python3 manage.py runserver
+
+
+cd /home/project/xrwvm-fullstack_developer_capstone/server/frontend
+npm install
+npm run build
+
+Run the following command to build the Docker app.
+Remember to do this, every time you make changes to app.js.
+
+docker build . -t nodeapp
+
+The docker-compose.yml has been created to run two containers, one for Mongo and the other for the Node app. Run the following command to run the server:
+
+docker-compose up

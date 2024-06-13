@@ -24,3 +24,8 @@ docker build . -t nodeapp
 The docker-compose.yml has been created to run two containers, one for Mongo and the other for the Node app. Run the following command to run the server:
 
 docker-compose up
+
+
+
+python3 manage.py makemigrations
+python3 manage.py migrate --run-syncdb
